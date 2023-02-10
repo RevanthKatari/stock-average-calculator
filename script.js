@@ -18,7 +18,7 @@ form.addEventListener("submit", event => {
   const totalCost = (numStocks1 * price1) + (numStocks2 * price2);
   const average = totalCost / totalStocks;
 
-  resultDiv.innerHTML = `The average cost per stock is ${average.toFixed(2)}`;
+  resultDiv.innerHTML = `The average cost is ${average.toFixed(2)}`;
 });
 
 resetButton.addEventListener("click", function() {
