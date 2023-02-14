@@ -1,31 +1,42 @@
+  
+</body>
+</html>
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Average Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <meta name="google-site-verification" content="LheJPlMd9jxW8cDcoMkfg4FKgl78jrd1a9s_U8ZFRCs" />
+    <style>
+      body { 
+          background:black;
+      }
+    </style> 
   </head>
-  <body>
+  <body style="background-color:black;">
     <canvas id="webgl-canvas" width="981" height="951" style="width: 981px; height: 951px;"></canvas>
     <h1>Stock Average Calculator</h1>
+    <div class="form1">
     <form id="form">
         <h2>First Buy</h2>
       <label for="numStocks1">Current Units</label>
       <input type="text" id="numStocks1"><br>
       <label for="price1">price per share</label>
       <input type="text" id="price1">
-      <br><br>
       <h2>Second Buy</h2>
       <label for="numStocks2">New Units</label>
       <input type="text" id="numStocks2"><br>
       <label for="price2">price per share</label>
       <input type="text" id="price2">
-      <br><br>
       <button type="submit">Calculate</button>
       <button id="reset">Reset</button>
     </form>
+  </div>
     <div id="result"></div>
     <script id="js-vertex-shader" type="x-shader/x-vertex">
         attribute vec3 position;
@@ -277,3 +288,5 @@
 
   </body>
 </html>
+
+
