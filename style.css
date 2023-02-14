@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #2a2a2a;
     border: 0;
     display:contents;
   }
@@ -10,22 +10,31 @@ body {
     text-align: center;
     margin-top: 30px;
     color: #f2f2f2;
-    margin-bottom: 50px;
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff, 
-                 0 0 20px rgb(64, 0, 128), 
-                 0 0 30px rgb(128, 18, 237), 
-                 0 0 40px rgb(134, 69, 231), 
-                 0 0 55px rgb(214, 114, 237), 
-                 0 0 70px rgb(195, 92, 221);
+    margin-bottom: 20px;
+    
   }
+  div.form1
+  {
+      display: block;
+      text-align: center;
+  }
+  form1
+  {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      margin-top: auto;
+  }
+
   #form {
-    display: inline-block;
-    width: 500px;
+    display:inline-flex;
+    width: 400px;
+    height: auto;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    padding: 5px;
+    padding: 4px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
@@ -54,25 +63,36 @@ body {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 0px;
+    margin-top: -5px;
   }
   button:hover{
   background: #f47391;
   transition: all .35s;
   }
-  
+  div.result
+{
+    display: block;
+    text-align: center;
+}
+result
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
   #result {
     color: black;
-    font-weight: 1000;
+    font-weight: 600;
     margin: 0 auto;
-    height: 100x;
-    width: 500px;
+    height: 80x;
+    width: 400px;
     text-align: center;
     font-size: 18px;
-    padding: 25px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   #webgl-canvas {
@@ -90,7 +110,7 @@ body {
     background-color: #f47391;
     color: #fff;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 5px;
     float: left;
     border-radius: 20px;
   }
